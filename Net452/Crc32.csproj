@@ -50,9 +50,8 @@
 xcopy /Y "$(SolutionDir)src\Properties\*cs" "$(ProjectDir)Properties\"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>"$(SolutionDir).nuget\Nuget.exe" SetApiKey fe8c1b56-a1a8-4d2f-9848-9f2edc17abc7
-"$(SolutionDir).nuget\Nuget.exe" Pack "$(SolutionDir)assets\Crc32.nuspec"
-move Crc32.1.0.0.nupkg  "$(SolutionDir)assets\"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
