@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Crc32</id>
+        <version>1.0.0</version>
+        <authors>dario.griffo</authors>
+        <owners>dario.griffo</owners>
+        <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+        <projectUrl>https://github.com/dariogriffo/Crc32</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/dariogriffo/Crc32/develop/assets/icon.jpg</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>This is a modification of the Damien Guard algorithm with a static table with improves drastically the performance</description>
+        <releaseNotes>Initial publish</releaseNotes>
+        <copyright>Copyright 2014 @ Dario Griffo</copyright>
+        <tags>Crc32</tags>
+        <dependencies>            
+        </dependencies>
+    </metadata>
+    <files>
+		<file src="..\Net20\bin\Release\Crc32.dll" target="lib\Net20\Crc32.dll" />
+		<file src="..\Net35\bin\Release\Crc32.dll" target="lib\net35\Crc32.dll" />
+        <file src="..\Net40\bin\Release\Crc32.dll" target="lib\net40\Crc32.dll" />
+        <file src="..\Net45\bin\Release\Crc32.dll" target="lib\net45\Crc32.dll" />
+        <file src="..\Net451\bin\Release\Crc32.dll" target="lib\net451\Crc32.dll" />
+		<file src="..\Net452\bin\Release\Crc32.dll" target="lib\net452\Crc32.dll" />
+        <file src="icon.jpg" target="icon.jpg" />
+    </files>
+</package>
