@@ -172,3 +172,4 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+/src/Crc32/project.lock.json
