@@ -100,12 +100,12 @@ namespace Crc32
         private readonly uint[] _table;
         private uint _hash;
 
-        public Crc32Bis()
+        public Crc32Algorithm()
             : this(DefaultPolynomial, DefaultSeed)
         {
         }
 
-        public Crc32Bis(uint polynomial, uint seed)
+        public Crc32Algorithm(uint polynomial, uint seed)
         {
             _table = InitializeTable(polynomial);
             _seed = _hash = seed;
@@ -124,7 +124,9 @@ namespace Crc32
         protected override byte[] HashFinal()
         {
             var hashBuffer = UintToBigEndianBytes(~_hash);
+#if !DOTNET5_4
             HashValue = hashBuffer;
+#endif
             return hashBuffer;
         }
 

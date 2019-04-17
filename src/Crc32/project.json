@@ -1,0 +1,28 @@
+﻿{
+  "version": "1.0.1-beta-3",
+  "description": "This is a modification of the Damien Guard algorithm with a static table with improves drastically the performance",
+  "authors": [ "dario.griffo" ],
+  "tags": [ "Crc32" ],
+  "projectUrl": "https://github.com/dariogriffo/Crc32",
+  "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0.html",
+  "copyright": "Copyright 2016 @ Dario Griffo",
+  "iconUrl": "https://raw.githubusercontent.com/dariogriffo/Crc32/develop/assets/icon.jpg",
+  "releaseNotes": "Added support for more frameworks",
+
+  "frameworks": {
+    "net20": { },
+    "net35": { },
+    "net40": { },
+    "net45": { },
+    "net451": { },
+    "net452": { },
+    "net46": { },
+    "net461": { },
+    "dotnet5.4": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Security.Cryptography.Algorithms": "4.0.0-beta-23516"
+      }
+    }
+  }
+}
